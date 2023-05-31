@@ -2517,6 +2517,11 @@ padding-top: 94px; */
 .card__item {
   width: 370px;
 }
+@media screen and (min-width: 768px) {
+  .card__item {
+    width: 350px;
+  }
+}
 .card__link {
   display: block;
   color: var(--h3-text-color);
