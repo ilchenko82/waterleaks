@@ -1,12 +1,16 @@
 .we-do {
 	padding-top: 0;
-	display: none;
 	
 	@include tablet {
 		display: block;
 		padding-top: 20px;
 	}
 	@include pc {
+		display: block;
+		padding-top: 20px;
+	}
+
+	@include mobile {
 		display: block;
 		padding-top: 20px;
 	}
@@ -18,6 +22,17 @@
 		margin: 0 0 0 0;
 		/*   align-items: center; */
 		@include tablet {
+			width: 100%;
+			display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		// flex-basis: 50%;
+		gap: 30px;
+		margin-top: 30px;
+		 ;
+		}
+		@include mobile {
 			width: 100%;
 			display: flex;
 		flex-direction: row;

@@ -2140,7 +2140,6 @@ ul {
 
 .we-do {
   padding-top: 0;
-  display: none;
 }
 @media screen and (min-width: 768px) {
   .we-do {
@@ -2149,6 +2148,12 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
+  .we-do {
+    display: block;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
   .we-do {
     display: block;
     padding-top: 20px;
@@ -2166,6 +2171,25 @@ ul {
   /*   align-items: center; */
 }
 @media screen and (min-width: 768px) {
+  .we-do__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
   .we-do__list {
     width: 100%;
     display: -webkit-box;
