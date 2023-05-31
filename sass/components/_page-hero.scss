@@ -1,0 +1,135 @@
+.hero {
+  max-width: 1600px;
+
+  background-color: var(--footer-bkg-color);
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero_mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  & {
+	 background-image: linear-gradient(
+		  to right,
+		  rgba(47, 48, 58, 0.4),
+		  rgba(47, 48, 58, 0.4)
+		),
+		url('../images/hero_mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 577px) {
+  max-width: 768px;
+  padding: 118px 60px;
+  // margin: 0 auto;
+  // text-align: center;
+  background-color: var(--footer-bkg-color);
+  background-image: linear-gradient(
+		to right,
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	 ),
+	 url('../images/hero_tablet@1x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+	 (min-resolution: 192dpi),
+	 (min-resolution: 2dppx) {
+	 & {
+		background-image: linear-gradient(
+			 to right,
+			 rgba(47, 48, 58, 0.4),
+			 rgba(47, 48, 58, 0.4)
+		  ),
+		  url('../images/hero_tablet@2x.jpg');
+	 }
+  }
+}
+
+@media screen and (min-width: 961px) {
+  max-width: 1600px;
+  min-height: 400px;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--footer-bkg-color);
+  background-image: linear-gradient(
+		to right,
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	 ),
+	 url('../images/hero_pc@1x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+	 (min-resolution: 192dpi),
+	 (min-resolution: 2dppx) {
+	 & {
+		background-image: linear-gradient(
+			 to right,
+			 rgba(47, 48, 58, 0.4),
+			 rgba(47, 48, 58, 0.4)
+		  ),
+		  url('../images/hero_pc@2x.jpg');
+	 }
+  }
+}
+  
+
+  /* 	@include mobile {
+		padding: 118px 0;
+		height: 400px;
+	} */
+  @include tablet {
+    padding: 118px 0;
+    height: 400px;
+  }
+  @include pc {
+    height: 600px;
+    padding: 200px 0;
+  }
+
+  &__text-title {
+    font-size: 26px;
+    line-height: 1.65;
+    max-height: 400px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--filter-link-color);
+
+    @include mobile {
+      font-size: 26px;
+    }
+    @include tablet {
+      font-size: 26px;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    @include pc {
+      padding-bottom: 0;
+      padding-top: 0;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.65;
+
+      margin-top: 0px;
+      margin-left: 10px;
+      font-size: 44px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+
+.button-blue {
+	padding: 10px 32px 10px 32px;
+ 
+	background-color: var(--logo-text-color);
+	cursor: pointer;
+	color: var(--filter-link-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	border-style: hidden;
+	border-radius: 4px;
+ 
+	box-shadow: 0px 4px 4px var(--button-transparent);
+ 
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .button-blue:hover,
+ .button-blue:focus {
+	background-color: var(--buttonactive);
+	cursor: pointer;
+ }
+
+ .button-margin{
+	margin-top: 30px;
+
+ }
+
+ .multibutton {
+	position: fixed;
+	z-index: 200;
+	right: 30px;
+	bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 70px;
+	height: 70px;
+	transition: 0.2s ease;
+}
+
+.multibutton:hover {
+	width: auto;
+	height: auto;
+}
+
+.multibutton:hover .multibutton__list {
+	position: relative;
+	top: auto;
+	bottom: 10px;
+	visibility: visible;
+}
+
+.multibutton:hover .multibutton__item {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.3s ease;
+	transform: scaleX(1) scaleY(1) translateY(0);
+}
+
+.multibutton__list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	right: 13px;
+	top: 80px;
+	visibility: hidden;
+	transition: 0.3s ease;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.multibutton__title {
+	font-size: 12px;
+	color: #fff;
+	text-decoration: none;
+	/* background: rgba(0,0,0,0.8); */
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.multibutton__item {
+	display: flex;
+	align-items: center;
+	margin: 4px 0;
+	transform: scaleX(0.4) scaleY(0.4) translateY(150px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.multibutton__button {
+	width: 70px;
+	height: 70px;
+	background: #2196f3;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	animation: animation_button 3s linear infinite;
+	transition: all 200ms ease-out;
+}
+
+@keyframes animation_button {
+	0% {
+		 box-shadow: 0 0 0 0 #2196f3, 0 0 0 0 rgba(60, 118, 233, 0.7);
+	}
+	40% {
+		 box-shadow: 0 0 0 13.62667px rgba(60, 118, 233, 0), 0 0 0 6.81333px rgba(60, 118, 233, 0.7);
+	}
+	80% {
+		 box-shadow: 0 0 0 27.25333px rgba(60, 118, 233, 0), 0 0 0 13.62667px rgba(60, 118, 233, 0.2);
+	}
+	100% {
+		 box-shadow: 0 0 0 34.06667px rgba(72, 128, 239, 0), 0 0 0 27.25333px rgba(39, 106, 239, 0.1);
+	}
+}
+
+.multibutton__button svg {
+	width: 30px;
+	height: 30px;
+	fill: #fff;
+}
+
+.multibutton__icon {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.multibutton__icon svg{
+	width: 26px;
+	height: 26px;
+	fill: #fff;
+}
