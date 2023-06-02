@@ -2166,6 +2166,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   margin: 0 0 0 0;
   /*   align-items: center; */
@@ -2232,9 +2234,24 @@ ul {
   color: var(--h3-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.4;
   letter-spacing: 0.03em;
   padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .we-do__title {
+    line-height: 1.67;
+  }
+}
+@media screen and (min-width: 768px) {
+  .we-do__title {
+    line-height: 1.67;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .we-do__title {
+    line-height: 1.67;
+  }
 }
 
 .menu-container {
