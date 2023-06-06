@@ -1,19 +1,19 @@
 .rules {
 	
 	padding-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 
 	@include mobile {
 	padding-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 	}
 	@include tablet {
 		padding-top: 0px;
-		padding-bottom: 60px;
+		padding-bottom: 0px;
 		}
 		@include pc {
 			padding-top: 0px;
-			padding-bottom: 94px;
+			padding-bottom: 0px;
 			}
 
 	@include mobile {

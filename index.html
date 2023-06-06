@@ -2,10 +2,17 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
 	<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
 <!-- 	<link rel="stylesheet" href="css/style.css"> -->
 <link rel="stylesheet" href="css/main.min.css">
@@ -50,17 +57,13 @@
 			<a class="logo" href="./index.html">Water<span class="logo-black">Leaks</span></a>
 			<nav class="nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a class="nav__link nav__link_current" href="./index.html">Про Нас</a></li>
+					<li class="nav__item"><a class="nav__link nav__link_current" href="./index.html">Про пошук</a></li>
 					<li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
-					<li class="nav__item"><a class="nav__link" href="./portfolio.html">Обладнання</a></li>
+					<li class="nav__item"><a class="nav__link">Обладнання</a></li>
 				</ul>
 			</nav>
 			<ul class="contacts">
-					<li class="contacts__item"><a class="contacts__link" href="mailto:info@waterleaks.com.ua">
-						<svg class="contacts__icon" width="16px" height="12px">
-						<use href="./images/sprite.svg#icon-letter"></use>
-						</svg>info@waterleaks.com.ua</a>
-					</li>
+					
 					<li class="contacts__item"><a class="contacts__link" href="tel:+380689001811">
 						<svg class="contacts__icon" width="10px" height="16px">
 						<use href="./images/sprite.svg#icon-phone"></use>
@@ -93,7 +96,7 @@
 			  <li class="mobile-menu__item">
 				 <a
 					href="./index.html"
-					class="link mobile-menu__link mobile-menu__link--current">Про нас</a
+					class="link mobile-menu__link mobile-menu__link--current">Про пошук</a
 				 >
 			  </li>
 			  <li class="mobile-menu__item">
@@ -112,26 +115,19 @@
 					+38 068 900 18 11</a
 				 >
 			  </li>
-			  <li class="contacts-menu__item">
-				 <a class="contacts-menu__link contacts-menu__mail" href="mailto:info@waterleaks.com.ua">
-					<svg class="contacts-menu__icon" width="16px" height="12px">
-					  <use href="./images/sprite.svg#icon-letter"></use>
-					</svg>
-					info@waterleaks.com.ua</a
-				 >
-			  </li>
+			  
 			</ul>
 			<ul class="networks-menu">
-			  <li class="networks-menu__item"><a class="networks-menu__link" href="#">Instagram</a></li>
-			  <li class="networks-menu__item"><a class="networks-menu__link" href="#">Facebook</a></li>
-			  <li class="networks-menu__item"><a class="networks-menu__link" href="#">YouTube</a></li>
-			</ul>
+				<li class="networks-menu__item"><a href="https://www.instagram.com/waterleaksua/" class="networks-menu__link" href="#">Instagram</a></li>
+				<li class="networks-menu__item"><a href="https://www.facebook.com/waterleaksUA/" class="networks-menu__link" href="#">Facebook</a></li>
+				<li class="networks-menu__item"><a class="networks-menu__link" href="#">YouTube</a></li>
+			 </ul>
 		 </div>
 	</header>
 <main>
 <section class="hero">
 		<div class="container">
-			<h1 class="hero__text-title">Знайти виток води в</br>будинку або квартирі</h1>
+			<h1 class="hero__text-title">Пошук витоку води в</br>будинку або квартирі</h1>
 			<button type="button" class="button-blue button-margin" data-modal-open>Замовити послугу</button>
 			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
@@ -139,36 +135,43 @@
 						<form class="modal__form">
 							<div class="modal__form-field">
 								<label class="modal__form-label" for="name">Ім'я</label>
-								<input class="modal__form-input" type="text" id="name" placeholder="Василий Пупкин">
+								<input class="modal__form-input" type="text" id="name" placeholder="Введіть ваше ім'я">
 								<svg width="12px" height="12px" class="modal__form-icon">
 									<use href="./images/sprite.svg#icon-name"></use>
 								</svg>
 							</div>
 							<div class="modal__form-field">
 								<label class="modal__form-label" for="tel">Телефон</label>
-								<input class="modal__form-input" type="tel" id="tel" placeholder="+38093">
+								<input class="modal__form-input" type="tel" id="tel" placeholder="+380">
 								<svg width="13px" height="13px" class="modal__form-icon">
 									<use href="./images/sprite.svg#icon-telnumber"></use>
 								</svg>
 							</div>
-							<div class="modal__form-field">
-								<label class="modal__form-label" for="mail">Пошта</label>
-								<input class="modal__form-input" type="mail" id="tel">
-								<svg width="15px" height="12px" class="modal__form-icon">
-									<use href="./images/sprite.svg#icon-form-letter"></use>
-								</svg>
-							</div>
+							<div class="modal__checkbox">
+								<p class="modal__messenger">Оберіть мессенджер для спілкування:</p>
+								<label for="check" class="checkbox">
+									<input class="browser-checkbox" type="checkbox" name="telegram" id="check">
+									<span class="modal__checkbox-frame"></span>
+									<p class="modal__checkbox-text">Telegram</p>
+								</label>
+								<label for="check" class="checkbox">
+									<input class="browser-checkbox" type="checkbox" name="telegram" id="check">
+									<span class="modal__checkbox-frame"></span>
+									<p class="modal__checkbox-text">Telegram</p>
+								</label>
+					</div>
+
 							<div class="modal__form-field">
 								<label class="modal__form-label" for="comment">Коментар:</label>
-								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="Ваш коментар до запиту"></textarea>
 							</div>
-							<div class="modal__checkbox">
+							<!-- <div class="modal__checkbox">
 									<label for="check" class="checkbox">
 										<input class="browser-checkbox" type="checkbox" name="checkbox" id="check">
 										<span class="modal__checkbox-frame"></span>
 										<p class="modal__checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal__checkbox-link" href="">Умови договору</a></p>
 									</label>
-							</div>
+							</div> -->
 						<button type="submit" class="button-blue button-send">Відправити</button>
 						</form>
 						<button class="button-closed" data-modal-close>
@@ -238,7 +241,7 @@
 								alt="Десктопні додатки"
 							/>
 						</picture>
-					<div class="we-do__products"><p>виконання ремонтних робіт</p></div>
+					<div class="we-do__products"><p>Виконання ремонтних робіт</p></div>
 				</li>
 				<li class="we-do__item">
 					<picture>
@@ -269,33 +272,162 @@
 				<div class="rules__item-box">
 					<img src="./images/pressure.png" width="100px" alt="Гідравлічні випробування">
 				</div>
-				<h3 class="rules__item-box-title">Випробування на цілісність труб</h3>
-				<p class="rules__item-box-text">Гідравлічні випробування труб з метою виявлення системи в якій є виток води</p>
+				<h3 class="rules__item-box-title">1. Перевірка труб на герметичнічть</h3>
+				<p class="rules__item-box-text">Проводяться гідравлічні або пневматичні випробування труб для виявлення тої труби, в якій є виток води. Створюється компресором тиск в різних трубах послідовно, за допомогою манометра відстежується зміна тиску з плином часу. Падіння тиску у трубі — означає що є виток.</p>
 			</li>
 			<li class="rules__item">
 				<div class="rules__item-box">
 					<img src="./images/trasser.png" width="90px" alt="Трассування трубопроводів">
 				</div>
-				<h3 class="rules__item-box-title">Трассування трубопроводів</h3>
-				<p class="rules__item-box-text">Визначення місця прокладання пошкодженного трубопроводу тепловізором, акустикою</p>
+				<h3 class="rules__item-box-title">2. Визначення місць прокладання труб</h3>
+				<p class="rules__item-box-text">Після гідравлічних випробуваннь проводиться визначення траси прокладання пошкодженного трубопроводу за допомогою тепловізора, та акустичним витокошукачем. Іноді під час трассування тепловізором видно і місце витоку.</p>
 			</li>
 			<li class="rules__item">
 				<div class="rules__item-box">
 						<img src="./images/acoustic.png" width="90px" alt="Трассування трубопроводів">
 				</div>
-				<h3 class="rules__item-box-title">Пошук Акустичним витокошукачем</h3>
-				<p class="rules__item-box-text">Пошук витоку за характерним шумом в місці витоку</p>
+				<h3 class="rules__item-box-title">3. Пошук акустичним витокошукачем</h3>
+				<p class="rules__item-box-text">Після визначення місця прокладки труб відбувається 
+					пошук потенційних місць витоків, за рахунок особливого шуму води в місці, де вода витікає з труби, додатково місце витоку контролюється вологоміром — підвищений рівень прихованої вологи на стінах та/або підлозі, свідчить про близьке розташування витоку.</p>
 			</li>
 			<li class="rules__item">
 					<div class="rules__item-box">
 						<img src="./images/gassearch.png" width="80px" alt="Трассування трубопроводів">
 					</div>
-				<h3 class="rules__item-box-title">Пошук трасуючим газом</h3>
-				<p class="rules__item-box-text">Пошук витоку за рахунок підвищенної концентрації трасуючого газу в місці витоку</p>
+				<h3 class="rules__item-box-title">4. Пошук трасуючим газом</h3>
+				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом відбувається уточнення або окремий пошук витоку за рахунок закачування в 
+					трубу "трасуючого газу", що буде виходити з труби в місці витоку, а газовий аналізатор - 
+					сигналізуватиме де саме газ витікає з пошкодженої труби.</p>
 			</li>
 		</ul>
 	</div>
 	</section>
+
+	<section class="section">
+		<div class="container">
+			<h1 class="we-do__title">Знайдені витоки води та їх причини</h1>
+<ul class="card">
+	 <li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Вставновлений з надлишковим напруженням від труб -  PX фітінг, під впливом гарячої води із змінною температурою - лопнув в підлозі</p>
+					</div>
+					<img src="./images/gilza.jpg" alt="виток з фітінга" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Трійник що тріснув</h2>
+			</div>
+				</a>
+	</li>
+	<li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Невірно виконаний монтаж натяжної гільзи на фітінг, зпричинило подальшу розгерметазицію трубної магістрали з витоком теплоносія під стяжку підлоги</p>
+					</div>
+					<img src="./images/gilza-2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Невірний монтаж гільзи</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Труба з поліпропілену, пайка якої виконана з порушенням технології, що видно на живому розрізі</p>
+					</div>
+					<img src="./images/ppr-2.jpg" alt="Seafood" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Неякісна пайка труби з ППР</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Ще один виток з неякісно зпаяного поліпропіленового фітінга та труби. Сама труба сумнівної якості, від сумнівного виробника. Монтаж виконаний самостійно власником або плиткарем, що також не додало надійності.</p>
+					</div>
+					<img src="./images/ppr-1.jpg" alt="PPR труби" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Неякісна пайка труби з ППР</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Відсутність або неякісно виконана герметизація різьбового з'єднання водорозетки, ниткою або паклею, зпричинила витікання води за плиткою і змочення всієї стіни</p>
+					</div>
+					<img src="./images/thread-leak.jpg" alt="Виток по різьбі за плиткою" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Виток по різьбі</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Труби що вичерпали свій ресуср в старому будинку, також часто стають причиною витоків і пошкоджень</p>
+					</div>
+					<img src="./images/old-pipe.jpg" alt="Старі прогнивші труби" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Старі труби</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Пошкодження контуру теплої підлоги будівельниками або в наслідок порушення технології монтажа, наприклад: монтаж системи при температурі -20 та прогрів труби промисловим феном </p>
+					</div>
+					<img src="./images/floor.jpg" alt="виток з теплої підлоги" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Пошкодження теплої підлоги</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Частіше поліпропіленові та інші труби пошкоджені впливом високого тиску - гідроударом, в наслідок відсутності регулюючої арматури - редуктора</p>
+					</div>
+					<img src="./images/ppr-3.jpg" alt="Проєкт LAB" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Пошкодження гідроударом</h2>
+			</div>
+			
+			</a>
+	</li><li class="card__item">
+		<a class="card__link">
+			<div class="card__image">
+					<div class="card__feature">
+							<p class="card__feature-text">Відсутність щільності в каналізаційній мережі, в наслідок таких факторів: пошкодження або відсутність резинового ущільнювача, пошкодження будівельниками, саморізи та цвяхи в трубах.</p>
+					</div>
+					<img src="./images/drainage.jpg" alt="Виток з каналідзації" width="370">
+			</div>
+			<div class="card__block">
+				<h2 class="card__name">Розгерметизація каналізації</h2>
+			</div>
+			
+			</a>
+	</li>
+</ul>
+ </div>
+</section>
 
 <section class="section team">
 			<div class="container">
@@ -448,14 +580,14 @@
 				<p class="footer__address-link">Пошук витоків — наша робота</p>
 			</div>
 			<ul class="footer__contacts-list">
-				<li class="footer__contacts-items"><a class="footer__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li class="footer__contacts-items"><a class="footer__contacts-link" href="tel:+380961111111">+38 068 900 18 11</a></li>
+				<li class="footer__contacts-items"><a class="footer__contacts-link" href="mailto:info@waterleaks.com.ua">info@waterleaks.com.ua</a></li>
+				<li class="footer__contacts-items"><a class="footer__contacts-link" href="tel:+380689001811">+38 068 900 1811</a></li>
 			</ul>
 		</address>
 		<div class="footer__social-list"><p class="footer__form-title">Приєднуйтесь</p>
 			<ul class="footer__social-link">
 				<li>
-					<a href="" class="footer__social-button">
+					<a href="https://www.instagram.com/waterleaksua/" class="footer__social-button">
 						<svg width="20px" height="20px">
 							<use href="./images/sprite.svg#icon-instagram"></use>
 						</svg>
@@ -463,7 +595,7 @@
 				</li>
 				
 				<li>
-					<a href="" class="footer__social-button">
+					<a href="https://www.facebook.com/waterleaksUA/" class="footer__social-button">
 						<svg width="20px" height="20px">
 							<use href="./images/sprite.svg#icon-facebook"></use>
 						</svg>

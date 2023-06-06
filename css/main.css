@@ -1205,6 +1205,12 @@ ul {
     height: 581px;
   }
 }
+.modal__messenger {
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .modal__title {
   display: inline-block;
   font-weight: 700;
@@ -1699,24 +1705,24 @@ ul {
 
 .rules {
   padding-top: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 @media screen and (min-width: 480px) {
   .rules {
     padding-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .rules {
     padding-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .rules {
     padding-top: 0px;
-    padding-bottom: 94px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -2571,6 +2577,7 @@ padding-top: 94px; */
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+  cursor: auto;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -2626,6 +2633,7 @@ padding-top: 94px; */
 }
 .card__name {
   font-size: 18px;
+  font-weight: 400;
   color: var(--black-text-color);
 }
 .card__text {
