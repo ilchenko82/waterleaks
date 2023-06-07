@@ -81,11 +81,11 @@ display: inline-block;
 	 }
 	 
 	 &__form-field:nth-child(4n) {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	 }
 	 
 	 &__form-field:last-child {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	 }
 	 
 	 
@@ -274,9 +274,9 @@ display: inline-block;
 	 }
  }
  
- .browser-checkbox {
-	appearance: none;
- }
+//  .browser-checkbox {
+// 	appearance: none;
+//  }
 
  
  .browser-checkbox:checked + .modal__checkbox-frame {

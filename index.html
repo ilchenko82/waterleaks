@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="css/main.min.css">
 <link	href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 	rel="stylesheet">
-<title>Document</title>
+<title>Пошук витоків води</title>
 </head>
 <body><div class="multibutton">
 	<div class="multibutton__button">
@@ -57,19 +57,22 @@
 			<a class="logo" href="./index.html">Water<span class="logo-black">Leaks</span></a>
 			<nav class="nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a class="nav__link nav__link_current" href="./index.html">Про пошук</a></li>
-					<li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
-					<li class="nav__item"><a class="nav__link">Обладнання</a></li>
+					<li class="nav__item"><a class="nav__link" href="#services">Послуги</a></li>
+					<li class="nav__item"><a class="nav__link" href="#price">Ціна</a></li>
+					<li class="nav__item"><a class="nav__link" href="#search_stage">Про пошук</a></li>
+					<li class="nav__item"><a class="nav__link" href="#our_case">Роботи</a></li>
+					<li class="nav__item"><a class="nav__link" href="#we_do">Про витоки</a></li>
+					<li class="nav__item"><a class="nav__link" href="#tools">Обладнання</a></li>
 				</ul>
 			</nav>
-			<ul class="contacts">
+			<!-- <ul class="contacts">
 					
 					<li class="contacts__item"><a class="contacts__link" href="tel:+380689001811">
 						<svg class="contacts__icon" width="10px" height="16px">
 						<use href="./images/sprite.svg#icon-phone"></use>
 						</svg>+38 068 900 18 11</a>
 					</li>
-			</ul>
+			</ul> -->
 			<button type="button" class="js-open-menu menu-toggle" data-menu-button="" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
@@ -93,15 +96,30 @@
 			  </svg>
 			</button>
 			<ul class="mobile-menu">
+				<li class="mobile-menu__item">
+					<a
+					  href="./index.html"
+					  class="link mobile-menu__link">Послуги</a
+					>
+				 </li>
+				 <li class="mobile-menu__item">
+					<a
+					  href="./index.html"
+					  class="link mobile-menu__link">Ціна</a
+					>
+				 </li>
 			  <li class="mobile-menu__item">
 				 <a
 					href="./index.html"
-					class="link mobile-menu__link mobile-menu__link--current">Про пошук</a
+					class="link mobile-menu__link">Про пошук</a
 				 >
 			  </li>
 			  <li class="mobile-menu__item">
-				 <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a>
+				 <a href="./portfolio.html" class="link mobile-menu__link">Роботи</a>
 			  </li>
+			  <li class="mobile-menu__item">
+				<a href="./portfolio.html" class="link mobile-menu__link">Про Витоки</a>
+			 </li>
 			  <li class="mobile-menu__item">
 				<a href="./portfolio.html" class="link mobile-menu__link">Обладнання</a>
 			 </li>
@@ -150,14 +168,14 @@
 							<div class="modal__checkbox">
 								<p class="modal__messenger">Оберіть мессенджер для спілкування:</p>
 								<label for="check" class="checkbox">
-									<input class="browser-checkbox" type="checkbox" name="telegram" id="check">
-									<span class="modal__checkbox-frame"></span>
+									<input  type="checkbox" name="telegram" id="check">
+									<!-- <span class="modal__checkbox-frame"></span> -->
 									<p class="modal__checkbox-text">Telegram</p>
 								</label>
 								<label for="check" class="checkbox">
-									<input class="browser-checkbox" type="checkbox" name="telegram" id="check">
-									<span class="modal__checkbox-frame"></span>
-									<p class="modal__checkbox-text">Telegram</p>
+									<input  type="checkbox" name="viber" id="check">
+									<!-- <span class="modal__checkbox-frame"></span> -->
+									<p class="modal__checkbox-text">Viber</p>
 								</label>
 					</div>
 
@@ -183,7 +201,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section we-do">
+	<section class="section we-do" id="services">
 		<div class="container"><h2 class="we-do__title">Чим ми займаємось</h2>
 			<ul class="ul-nolist we-do__list">
 				<li class="we-do__item">
@@ -204,7 +222,7 @@
 							/>
 						</picture>
 					
-					<div class="we-do__products"><p>діагностика інженерних систем</p></div>
+					<div class="we-do__products"><p>діагностика систем з водою</p></div>
 				</li>
 				<li class="we-do__item">
 					<picture>
@@ -264,9 +282,9 @@
 				</li>
 			</ul>
 		</section>
-<section class="section rules">
-		<div class="container"> 
-		<h2 class="we-do__title">Етапи пошуку витоків води</h2>
+<section class="section rules" id="search_stage">
+		<div class="container" > 
+		<h2 class="we-do__title" >Етапи пошуку витоків води</h2>
 		<ul class="ul-nolist rules__list"> 
 			<li class="rules__item">
 				<div class="rules__item-box">
@@ -287,7 +305,7 @@
 						<img src="./images/acoustic.png" width="90px" alt="Трассування трубопроводів">
 				</div>
 				<h3 class="rules__item-box-title">3. Пошук акустичним витокошукачем</h3>
-				<p class="rules__item-box-text">Після визначення місця прокладки труб відбувається 
+				<p class="rules__item-box-text">Після визначення місця прокладки труб, відбувається 
 					пошук потенційних місць витоків, за рахунок особливого шуму води в місці, де вода витікає з труби, додатково місце витоку контролюється вологоміром — підвищений рівень прихованої вологи на стінах та/або підлозі, свідчить про близьке розташування витоку.</p>
 			</li>
 			<li class="rules__item">
@@ -295,16 +313,16 @@
 						<img src="./images/gassearch.png" width="80px" alt="Трассування трубопроводів">
 					</div>
 				<h3 class="rules__item-box-title">4. Пошук трасуючим газом</h3>
-				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом відбувається уточнення або окремий пошук витоку за рахунок закачування в 
-					трубу "трасуючого газу", що буде виходити з труби в місці витоку, а газовий аналізатор - 
-					сигналізуватиме де саме газ витікає з пошкодженої труби.</p>
+				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом, відбувається уточнення або безпосередній пошук витоку, закачуючи в 
+					трубу "трасуючий газ", що буде виходити з труби в місці витоку, а газовий аналізатор - 
+					сигналізуватиме — де саме газ витікає з пошкодженої труби.</p>
 			</li>
 		</ul>
 	</div>
 	</section>
 
-	<section class="section">
-		<div class="container">
+	<section class="section" id="our_case">
+		<div class="container" >
 			<h1 class="we-do__title">Знайдені витоки води та їх причини</h1>
 <ul class="card">
 	 <li class="card__item">
@@ -429,7 +447,7 @@
  </div>
 </section>
 
-<section class="section team">
+<section class="section team" id="we_do">
 			<div class="container">
 				<h2 class="team__title">Витоки які ми шукаємо та знаходимо</h2>
 			<ul class="ul-nolist team__list">
@@ -476,6 +494,7 @@
 					</div>
 					
 				</li>
+				
 			<li class="team__item">
 				<picture>
 					<source
@@ -488,8 +507,8 @@
 						media="(min-width: 768px)"/>
 					<img srcset="./images/heat_leak_mobile@1x.jpg 1x,
 					./images/heat_leak_mobile@2x.jpg 2x"
-						src="./images/heat_leak_mobile@1x.jpg"
-						alt="Микола Тарасов"
+						src="./images/wall_leak_mobile@1x.jpg"
+						alt="Ольга Рєпіна"
 						class="team-list__img"/>
 					</picture>
 				<div class="team__info">
@@ -571,6 +590,45 @@
 		</div>
 	</section> -->
 	</div>
+	<section class="section rules" id="tools">
+		<div class="container" > 
+		<h2 class="we-do__title" >Обладнання для пошуку</h2>
+		<ul class="ul-nolist rules__list"> 
+			<li class="rules__item">
+				<div class="rules__item-box">
+					<img src="./images/pressure.png" width="100px" alt="Гідравлічні випробування">
+				</div>
+				<h3 class="rules__item-box-title">1. Тепловізор</h3>
+				<p class="rules__item-box-text">Проводяться гідравлічні або пневматичні випробування труб для виявлення тої труби, в якій є виток води. Створюється компресором тиск в різних трубах послідовно, за допомогою манометра відстежується зміна тиску з плином часу. Падіння тиску у трубі — означає що є виток.</p>
+			</li>
+			<li class="rules__item">
+				<div class="rules__item-box">
+					<img src="./images/trasser.png" width="90px" alt="Трассування трубопроводів">
+				</div>
+				<h3 class="rules__item-box-title">2. Вологомір</h3>
+				<p class="rules__item-box-text">Після гідравлічних випробуваннь проводиться визначення траси прокладання пошкодженного трубопроводу за допомогою тепловізора, та акустичним витокошукачем. Іноді під час трассування тепловізором видно і місце витоку.</p>
+			</li>
+			<li class="rules__item">
+				<div class="rules__item-box">
+						<img src="./images/acoustic.png" width="90px" alt="Трассування трубопроводів">
+				</div>
+				<h3 class="rules__item-box-title">3. Акустичний витокошукач</h3>
+				<p class="rules__item-box-text">Після визначення місця прокладки труб, відбувається 
+					пошук потенційних місць витоків, за рахунок особливого шуму води в місці, де вода витікає з труби, додатково місце витоку контролюється вологоміром — підвищений рівень прихованої вологи на стінах та/або підлозі, свідчить про близьке розташування витоку.</p>
+			</li>
+			<li class="rules__item">
+					<div class="rules__item-box">
+						<img src="./images/gassearch.png" width="80px" alt="Трассування трубопроводів">
+					</div>
+				<h3 class="rules__item-box-title">4. Трасуючий газ та газоаналізатор</h3>
+				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом, відбувається уточнення або безпосередній пошук витоку, закачуючи в 
+					трубу "трасуючий газ", що буде виходити з труби в місці витоку, а газовий аналізатор - 
+					сигналізуватиме — де саме газ витікає з пошкодженої труби.</p>
+			</li>
+		</ul>
+	</div>
+	</section>
+
 </main>
 <footer class="footer">
 	<div class="container footer__contacts-box">
