@@ -88,6 +88,16 @@
 		border-radius: 4px;
 		margin-bottom: 30px;
 	 }
+
+	 &__tool-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 220px;
+		border-radius: 4px;
+		margin-bottom: 30px;
+	 }
 	 
 	 
 	 &__item-box-title {

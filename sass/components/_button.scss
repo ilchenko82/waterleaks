@@ -31,8 +31,8 @@
  .multibutton {
 	position: fixed;
 	z-index: 200;
-	right: 30px;
-	bottom: 50px;
+	right: 20px;
+	bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -93,8 +93,8 @@
 }
 
 .multibutton__button {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	background: #2196f3;
 	border-radius: 50%;
 	display: flex;
