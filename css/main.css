@@ -1733,6 +1733,23 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rules__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1750,7 +1767,6 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1764,6 +1780,11 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 480px) {
+  .rules__list {
+    margin-top: 30px;
   }
 }
 .rules__item {
@@ -2249,7 +2270,7 @@ ul {
 .we-do__title {
   color: var(--h3-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   padding: 0;
@@ -2454,6 +2475,132 @@ ul {
 }
 .networks-menu__item:first-child {
   padding-left: 0;
+}
+
+.swiper {
+  min-width: 300px;
+}
+@media screen and (min-width: 480px) {
+  .swiper {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper {
+    max-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-slide img {
+  max-width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  bottom: 250px;
+  right: 140px;
+  left: auto;
+}
+@media screen and (max-width: 480px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 1px;
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 20px;
+  }
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 140px;
+  bottom: 250px;
+  right: auto;
+}
+@media screen and (max-width: 480px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    display: none;
+    left: 1px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 20px;
+  }
+}
+
+.swiper-slider {
+  position: relative;
+}
+
+.swiper__tool {
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15px;
 }
 
 .portfolio {
