@@ -40,8 +40,8 @@
 
 		@include to-mobile {
 
-		   right: 1px;
-			display: none;
+		   right: 2px;
+		
 		 }
 
 		 @include mobile {
@@ -63,10 +63,11 @@
       left: 140px; 
 		bottom: 250px;
       right: auto;
+		position: absolute;
 
 		@include to-mobile {
-			display: none;
-		   left: 1px;
+						left: 2px;
+
 		 }
 
 		 @include mobile {

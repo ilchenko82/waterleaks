@@ -2534,8 +2534,7 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: 1px;
-    display: none;
+    right: 2px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -2558,11 +2557,11 @@ ul {
   left: 140px;
   bottom: 250px;
   right: auto;
+  position: absolute;
 }
 @media screen and (max-width: 480px) {
   .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    display: none;
-    left: 1px;
+    left: 2px;
   }
 }
 @media screen and (min-width: 480px) {
