@@ -57,24 +57,24 @@
 	//  }
 	}
 	 &__products {
-		position: absolute;
 		display: block;
 		width: 100%;
+		top: 10px;
 		// max-width: 300px;
 		height: 70px;
 		bottom: 0;
 		left: 0;
 	 
-		padding-top: 27px;
+		padding-top: 10px;
 	 
-		text-transform: uppercase;
-		font-weight: 700;
+		// text-transform: uppercase;
+		// font-weight: 700;
 		font-size: 14px;
 		line-height: 1.145;
 		text-align: center;
 		letter-spacing: 0.03em;
-		color: var(--feature-text-color);
-		background-color: var(--we-do-title-bkg);
+		// color: var(--feature-text-color);
+		// background-color: var(--we-do-title-bkg);
 	 }
 	 
 	 &__title {

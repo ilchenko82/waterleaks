@@ -67,13 +67,6 @@
 					<li class="nav__item"><a class="nav__link" href="#tools">Обладнання</a></li>
 				</ul>
 			</nav>
-			<!-- <ul class="contacts">
-					<li class="contacts__item"><a class="contacts__link" href="tel:+380689001811">
-						<svg class="contacts__icon" width="10px" height="16px">
-						<use href="./images/sprite.svg#icon-phone"></use>
-						</svg>+38 068 900 18 11</a>
-					</li>
-			</ul> -->
 			<button type="button" class="js-open-menu menu-toggle" data-menu-button="" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
@@ -184,13 +177,7 @@
 								<label class="modal__form-label" for="comment">Коментар:</label>
 								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="Ваш коментар до запиту"></textarea>
 							</div>
-							<!-- <div class="modal__checkbox">
-									<label for="check" class="checkbox">
-										<input class="browser-checkbox" type="checkbox" name="checkbox" id="check">
-										<span class="modal__checkbox-frame"></span>
-										<p class="modal__checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal__checkbox-link" href="">Умови договору</a></p>
-									</label>
-							</div> -->
+
 						<button type="submit" class="button-blue button-send">Відправити</button>
 						</form>
 						<button class="button-closed" data-modal-close>
@@ -204,7 +191,7 @@
 	</section>
 
 	<section class="content container">
-			<!-- <div class="tabs"> -->
+			<!-- <div class="tabs">
 				<nav class="tabs__items">
 					<a href="#tab_01" class="tabs__item"><span>Діагностика</span></a>
 					<a href="#tab_02" class="tabs__item"><span>Пошук</span></a>
@@ -280,8 +267,72 @@
 						</picture>
 					<div class="we-do__products"><p>Монтаж інженерних систем</p></div></div>
 				</div>
-			</div>
-			<!-- </div> -->
+
+</div> -->
+
+	<div class="tabs">
+		<div class="tabs__nav tabs-nav">
+			<div class="tabs-nav__item is-active" data-tab-name="tab-1"><h2 class="we-do__title">Пошук витоків води</h2></div>
+			<div class="tabs-nav__item" data-tab-name="tab-3"><h2 class="we-do__title">Ремонтні роботи</h2></div>
+			<div class="tabs-nav__item" data-tab-name="tab-4"><h2 class="we-do__title">Монтаж інженерних систем</h2></div>
+		</div>
+		<div class="tabs__content">
+			<div class="tab is-active tab-1"><picture>
+				<source
+					srcset="./images/img2.jpg 1x,
+					 ./images/img2@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img2_tabl@1x.jpg 1x,
+					./images/img2_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img2.jpg 1x,
+					./images/img2@2x.jpg 2x"
+						src="./images/img2.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p></p>
+				<p class="tabs__text">Вартість послуги 2500 грн в межах міста. Виконуємо пошук витоків води використовуючі сучасне обладнання та методи.</p>
+			</div></div></div>
+			<div class="tab tab-3"><picture>
+				<source
+					srcset="./images/img3.jpg 1x,
+					 ./images/img3@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img3_tabl@1x.jpg 1x,
+					./images/img3_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img3.jpg 1x,
+					./images/img3@2x.jpg 2x"
+						src="./images/img3.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p class="tabs__text">Виконання ремонтних робіт</p></div></div>
+			<div class="tab tab-4"><picture>
+				<source
+					srcset="./images/img4.jpg 1x,
+					 ./images/img4@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img4_tabl@1x.jpg 1x,
+					./images/img4_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img4.jpg 1x,
+					./images/img4@2x.jpg 2x"
+						src="./images/img4.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p class="tabs__text">Монтаж інженерних систем</p></div></div>
+		</div>
+
+</div>
 
 	</section>
 	<!-- <section class="section we-do" id="services">
@@ -1075,5 +1126,6 @@
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/swiper-init.js"></script>
+<script src="./js/tabs.js"></script>
 </body>
 </html>
