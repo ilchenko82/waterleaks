@@ -59,21 +59,13 @@
 			<a class="logo" href="./index.html">Water<span class="logo-black">Leaks</span></a>
 			<nav class="nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a class="nav__link" href="#services">Послуги</a></li>
-					<li class="nav__item"><a class="nav__link" href="#price">Ціна</a></li>
+					<li class="nav__item"><a class="nav__link" href="#services">Послуги та ціни</a></li>
 					<li class="nav__item"><a class="nav__link" href="#search_stage">Про пошук</a></li>
 					<li class="nav__item"><a class="nav__link" href="#our_case">Роботи</a></li>
 					<li class="nav__item"><a class="nav__link" href="#we_do">Про витоки</a></li>
 					<li class="nav__item"><a class="nav__link" href="#tools">Обладнання</a></li>
 				</ul>
 			</nav>
-			<!-- <ul class="contacts">
-					<li class="contacts__item"><a class="contacts__link" href="tel:+380689001811">
-						<svg class="contacts__icon" width="10px" height="16px">
-						<use href="./images/sprite.svg#icon-phone"></use>
-						</svg>+38 068 900 18 11</a>
-					</li>
-			</ul> -->
 			<button type="button" class="js-open-menu menu-toggle" data-menu-button="" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
@@ -99,30 +91,24 @@
 			<ul class="mobile-menu">
 				<li class="mobile-menu__item">
 					<a
-					  href="./index.html"
-					  class="link mobile-menu__link">Послуги</a
-					>
-				 </li>
-				 <li class="mobile-menu__item">
-					<a
-					  href="./index.html"
-					  class="link mobile-menu__link">Ціна</a
+					href="#services"
+					  class="link mobile-menu__link">Послуги та ціни </a
 					>
 				 </li>
 			  <li class="mobile-menu__item">
 				 <a
-					href="./index.html"
+				 href="#search_stage"
 					class="link mobile-menu__link">Про пошук</a
 				 >
 			  </li>
 			  <li class="mobile-menu__item">
-				 <a href="./portfolio.html" class="link mobile-menu__link">Роботи</a>
+				 <a href="#our_case" class="link mobile-menu__link">Роботи</a>
 			  </li>
 			  <li class="mobile-menu__item">
-				<a href="./portfolio.html" class="link mobile-menu__link">Про Витоки</a>
+				<a href=href="#we_do" class="link mobile-menu__link">Про Витоки</a>
 			 </li>
 			  <li class="mobile-menu__item">
-				<a href="./portfolio.html" class="link mobile-menu__link">Обладнання</a>
+				<a href="#tools" class="link mobile-menu__link">Обладнання</a>
 			 </li>
 			</ul>
 			<ul class="contacts-menu">
@@ -134,7 +120,7 @@
 					+38 068 900 18 11</a
 				 >
 			  </li>
-
+			  
 			</ul>
 			<ul class="networks-menu">
 				<li class="networks-menu__item"><a href="https://www.instagram.com/waterleaksua/" class="networks-menu__link" href="#">Instagram</a></li>
@@ -184,13 +170,7 @@
 								<label class="modal__form-label" for="comment">Коментар:</label>
 								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="Ваш коментар до запиту"></textarea>
 							</div>
-							<!-- <div class="modal__checkbox">
-									<label for="check" class="checkbox">
-										<input class="browser-checkbox" type="checkbox" name="checkbox" id="check">
-										<span class="modal__checkbox-frame"></span>
-										<p class="modal__checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal__checkbox-link" href="">Умови договору</a></p>
-									</label>
-							</div> -->
+
 						<button type="submit" class="button-blue button-send">Відправити</button>
 						</form>
 						<button class="button-closed" data-modal-close>
@@ -203,8 +183,8 @@
 		</div>
 	</section>
 
-	<section class="content container">
-			<!-- <div class="tabs"> -->
+	<section class="container" id="services">
+			<!-- <div class="tabs">
 				<nav class="tabs__items">
 					<a href="#tab_01" class="tabs__item"><span>Діагностика</span></a>
 					<a href="#tab_02" class="tabs__item"><span>Пошук</span></a>
@@ -213,7 +193,7 @@
 				</nav>
 				<div class="tabs__body">
 					<div id= "tab_01" class="tabs__block"><picture>
-						<source
+						<source 
 							srcset="./images/img1.jpg 1x,
 							 ./images/img1@2x.jpg 2x"
 							media="(min-width: 1200px)"/>
@@ -280,8 +260,72 @@
 						</picture>
 					<div class="we-do__products"><p>Монтаж інженерних систем</p></div></div>
 				</div>
-			<!--</div>-->
-			<!-- </div> -->
+
+</div> -->
+<h2 class="team__title">Послуги та ціни</h2>
+	<div class="tabs">
+		<div class="tabs__nav tabs-nav">
+			<div class="tabs-nav__item is-active" data-tab-name="tab-1"><h2 class="we-do__title">Пошук витоків води</h2></div>
+			<div class="tabs-nav__item" data-tab-name="tab-3"><h2 class="we-do__title">Ремонтні роботи</h2></div>
+			<div class="tabs-nav__item" data-tab-name="tab-4"><h2 class="we-do__title">Монтаж інженерних систем</h2></div>
+		</div>
+		<div class="tabs__content">
+			<div class="tab is-active tab-1"><picture>
+				<source
+					srcset="./images/img2.jpg 1x,
+					 ./images/img2@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img2_tabl@1x.jpg 1x,
+					./images/img2_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img2.jpg 1x,
+					./images/img2@2x.jpg 2x"
+						src="./images/img2.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p></p>
+				<p class="tabs__text">Вартість послуги 2500 грн в межах міста. Виконуємо пошук витоків води використовуючі сучасне обладнання та методи.</p>
+			</div></div></div>
+			<div class="tab tab-3"><picture>
+				<source
+					srcset="./images/img3.jpg 1x,
+					 ./images/img3@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img3_tabl@1x.jpg 1x,
+					./images/img3_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img3.jpg 1x,
+					./images/img3@2x.jpg 2x"
+						src="./images/img3.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p class="tabs__text">Виконання ремонтних робіт</p></div></div>
+			<div class="tab tab-4"><picture>
+				<source
+					srcset="./images/img4.jpg 1x,
+					 ./images/img4@2x.jpg 2x"
+					media="(min-width: 1200px)"/>
+				<source
+					srcset="./images/img4_tabl@1x.jpg 1x,
+					./images/img4_tabl@2x.jpg 2x"
+					media="(min-width: 768px)"/>
+					<img
+					srcset="./images/img4.jpg 1x,
+					./images/img4@2x.jpg 2x"
+						src="./images/img4.jpg"
+						alt="Десктопні додатки"
+					/>
+				</picture>
+			<div class="we-do__products"><p class="tabs__text">Монтаж інженерних систем</p></div></div>
+		</div>
+
+</div>
 
 	</section>
 	<!-- <section class="section we-do" id="services">
@@ -364,9 +408,9 @@
 			</ul>
 		</section> -->
 <section class="section rules" id="search_stage">
-		<div class="container" >
-		<h2 class="we-do__title">Послідовність пошуку витоків води</h2>
-		<ul class="ul-nolist rules__list">
+		<div class="container" > 
+		<h2 class="team__title">Послідовність пошуку витоків води</h2>
+		<ul class="ul-nolist rules__list"> 
 			<li class="rules__item">
 				<div class="rules__item-box">
 					<img src="./images/pressure.png" width="100px" alt="Гідравлічні випробування">
@@ -386,7 +430,7 @@
 						<img src="./images/acoustic.png" width="90px" alt="Трассування трубопроводів">
 				</div>
 				<h3 class="rules__item-box-title">3. Пошук акустичним витокошукачем</h3>
-				<p class="rules__item-box-text">Після визначення місця прокладки труб, відбувається
+				<p class="rules__item-box-text">Після визначення місця прокладки труб, відбувається 
 					пошук потенційних місць витоків, за рахунок особливого шуму води в місці, де вода витікає з труби, додатково місце витоку контролюється вологоміром — підвищений рівень прихованої вологи на стінах та/або підлозі, свідчить про близьке розташування витоку.</p>
 			</li>
 			<li class="rules__item">
@@ -394,8 +438,8 @@
 						<img src="./images/gassearch.png" width="80px" alt="Трассування трубопроводів">
 					</div>
 				<h3 class="rules__item-box-title">4. Пошук трасуючим газом</h3>
-				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом, відбувається уточнення або безпосередній пошук витоку, закачуючи в
-					трубу "трасуючий газ", що буде виходити з труби в місці витоку, а газовий аналізатор -
+				<p class="rules__item-box-text">В разі неможливості точно визначити місце витоку акустичним методом, відбувається уточнення або безпосередній пошук витоку, закачуючи в 
+					трубу "трасуючий газ", що буде виходити з труби в місці витоку, а газовий аналізатор - 
 					сигналізуватиме — де саме газ витікає з пошкодженої труби.</p>
 			</li>
 		</ul>
@@ -449,7 +493,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -465,7 +509,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -481,7 +525,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Виток по різьбі</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -497,7 +541,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Старі труби</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -513,7 +557,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Пошкодження теплої підлоги</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -529,7 +573,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Пошкодження гідроударом</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -545,7 +589,7 @@
 							<div class="card__block">
 								<h2 class="card__name">Розгерметизація каналізації</h2>
 							</div>
-
+							
 							</a>
 					</div>
 				</div>
@@ -597,7 +641,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -610,7 +654,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -623,7 +667,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Виток по різьбі</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -636,7 +680,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Старі труби</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -649,7 +693,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Пошкодження теплої підлоги</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -662,7 +706,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Пошкодження гідроударом</h2>
 			</div>
-
+			
 			</a>
 	</li><li class="card__item">
 		<a class="card__link">
@@ -675,7 +719,7 @@
 			<div class="card__block">
 				<h2 class="card__name">Розгерметизація каналізації</h2>
 			</div>
-
+			
 			</a>
 	</li>
 </ul>
@@ -727,9 +771,9 @@
 					<h3 class="team__people-name">Виток на стіні за плиткою</h3>
 					<p class="team__employee">Холодна вода з пошкодженого змішувача, яку видно під плиткою за допомогою тепловізора</p>
 					</div>
-
+					
 				</li>
-
+				
 			<li class="team__item">
 				<picture>
 					<source
@@ -770,7 +814,7 @@
 				<div class="team__info">
 					<h3 class="team__people-name">Виток з каналізації</h3>
 				<p class="team__employee">Виток води через розгерме-<br>тизацію каналізаційних труб що призводить до змочення стін та підлоги</p>
-
+				
 			</div>
 			</li>
 			</ul>
@@ -826,9 +870,9 @@
 	</section> -->
 	</div>
 	<section class="section rules" id="tools">
-		<div class="container" >
+		<div class="container" > 
 		<h2 class="team__title">Обладнання для пошуку</h2>
-		<ul class="ul-nolist rules__list">
+		<ul class="ul-nolist rules__list"> 
 			<li class="rules__item">
 				<div class="rules__tool-box">
 					<img srcset="./images/flire8@1x.jpg,
@@ -869,7 +913,7 @@
 		</ul>
 	</div>
 	</section>
-<!--
+<!-- 
 	<section class="swiper-slider">
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
@@ -915,7 +959,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -931,7 +975,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Неякісна пайка труби з ППР</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -947,7 +991,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Виток по різьбі</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -963,7 +1007,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Старі труби</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -979,7 +1023,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Пошкодження теплої підлоги</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -995,7 +1039,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Пошкодження гідроударом</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -1011,7 +1055,7 @@
 						<div class="card__block">
 							<h2 class="card__name">Розгерметизація каналізації</h2>
 						</div>
-
+						
 						</a>
 				</div>
 			</div>
@@ -1045,7 +1089,7 @@
 						</svg>
 					</a>
 				</li>
-
+				
 				<li>
 					<a href="https://www.facebook.com/waterleaksUA/" class="footer__social-button">
 						<svg width="20px" height="20px">
@@ -1069,11 +1113,12 @@
 				</li>
 			</ul>
 	</div>
-
+	
 </div>
 </footer>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/swiper-init.js"></script>
+<script src="./js/tabs.js"></script>
 </body>
 </html>
