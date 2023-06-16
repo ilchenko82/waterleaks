@@ -12,18 +12,50 @@
 	cursor: pointer;
 	flex: 1;
 	padding: 20px;
+	
+	@include to-mobile {
+		padding: 0;}
+
+		@include tablet {
+			padding: 0;
+			}
+			@include pc {
+padding: 10px;
+				}
 }
 
 .tabs-nav__item.is-active {
 	position: relative;
 	background-color:var(--team-bkg);
 	/* border-color: #55a32a; */
+
+	@include to-mobile {
+		padding: 0;}
+
+		@include tablet {
+			padding: 0;
+			}
+			@include pc {
+padding: 10px;
+				}
 }
 
 .tab {
 	background-color: var(--team-bkg);
 	display: none;
-	padding: 20px;
+
+	@include to-mobile {
+		padding: 0px;
+
+		}
+		@include tablet {
+			padding: 10px;
+			}
+			@include pc {
+				padding: 10px;
+				}
+
+
 }
 .tab.is-active { display: flex; 
 	justify-content: flex-start;
@@ -38,6 +70,17 @@
 	letter-spacing: 0.03em;
 	color: var(--basic-text-color);
 	text-align: left;
+
+	@include to-mobile {
+		font-size: 14px;}
+		@include mobile {
+			font-size: 14px;}
+		@include tablet {
+			font-size: 16px;
+			}
+			@include pc {
+				font-size: 16px;
+				}
  }
 
 
