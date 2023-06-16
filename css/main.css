@@ -1721,17 +1721,17 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .tabs-nav__item {
-    padding: 0;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 768px) {
   .tabs-nav__item {
-    padding: 0;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .tabs-nav__item {
-    padding: 10px;
+    padding: 25px;
   }
 }
 
@@ -1742,17 +1742,17 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .tabs-nav__item.is-active {
-    padding: 0;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 768px) {
   .tabs-nav__item.is-active {
-    padding: 0;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .tabs-nav__item.is-active {
-    padding: 10px;
+    padding: 25px;
   }
 }
 
@@ -1790,7 +1790,9 @@ ul {
 }
 
 .tabs__text {
-  margin-top: 10px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -1800,15 +1802,18 @@ ul {
 @media screen and (max-width: 480px) {
   .tabs__text {
     font-size: 14px;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 480px) {
   .tabs__text {
+    padding: 5px;
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
   .tabs__text {
+    padding: 5px;
     font-size: 16px;
   }
 }
@@ -2378,7 +2383,6 @@ ul {
   height: 70px;
   bottom: 0;
   left: 0;
-  padding-top: 10px;
   font-size: 14px;
   line-height: 1.145;
   text-align: center;
@@ -2392,18 +2396,27 @@ ul {
   letter-spacing: 0.03em;
   padding: 0;
 }
+@media screen and (max-width: 480px) {
+  .we-do__title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 480px) {
   .we-do__title {
-    line-height: 1.67;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 768px) {
   .we-do__title {
+    font-size: 18px;
     line-height: 1.67;
   }
 }
 @media screen and (min-width: 1200px) {
   .we-do__title {
+    font-size: 20px;
     line-height: 1.67;
   }
 }
