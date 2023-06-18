@@ -1719,17 +1719,61 @@ ul {
           flex: 1;
   padding: 20px;
 }
+@media screen and (max-width: 480px) {
+  .tabs-nav__item {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tabs-nav__item {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tabs-nav__item {
+    padding: 25px;
+  }
+}
 
 .tabs-nav__item.is-active {
   position: relative;
   background-color: var(--team-bkg);
   /* border-color: #55a32a; */
 }
+@media screen and (max-width: 480px) {
+  .tabs-nav__item.is-active {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tabs-nav__item.is-active {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tabs-nav__item.is-active {
+    padding: 25px;
+  }
+}
 
 .tab {
   background-color: var(--team-bkg);
   display: none;
-  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .tab {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tab {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tab {
+    padding: 10px;
+  }
 }
 
 .tab.is-active {
@@ -1746,12 +1790,37 @@ ul {
 }
 
 .tabs__text {
-  margin-top: 10px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
   text-align: left;
+}
+@media screen and (max-width: 480px) {
+  .tabs__text {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .tabs__text {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tabs__text {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tabs__text {
+    font-size: 16px;
+  }
 }
 
 .rules {
@@ -2314,7 +2383,6 @@ ul {
   height: 70px;
   bottom: 0;
   left: 0;
-  padding-top: 10px;
   font-size: 14px;
   line-height: 1.145;
   text-align: center;
@@ -2328,18 +2396,27 @@ ul {
   letter-spacing: 0.03em;
   padding: 0;
 }
+@media screen and (max-width: 480px) {
+  .we-do__title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 480px) {
   .we-do__title {
-    line-height: 1.67;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 768px) {
   .we-do__title {
+    font-size: 18px;
     line-height: 1.67;
   }
 }
 @media screen and (min-width: 1200px) {
   .we-do__title {
+    font-size: 20px;
     line-height: 1.67;
   }
 }
@@ -2890,7 +2967,7 @@ padding-top: 94px; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 30px;
   /* @include to-mobile {
   	max-width: 480px;
        flex-direction: column;

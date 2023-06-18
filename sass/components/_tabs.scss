@@ -12,18 +12,50 @@
 	cursor: pointer;
 	flex: 1;
 	padding: 20px;
+	
+	@include to-mobile {
+		padding: 5px;}
+
+		@include tablet {
+			padding: 10px;
+			}
+			@include pc {
+padding: 25px;
+				}
 }
 
 .tabs-nav__item.is-active {
 	position: relative;
 	background-color:var(--team-bkg);
 	/* border-color: #55a32a; */
+
+	@include to-mobile {
+		padding: 5px;}
+
+		@include tablet {
+			padding: 10px;
+			}
+			@include pc {
+padding: 25px;
+				}
 }
 
 .tab {
 	background-color: var(--team-bkg);
 	display: none;
-	padding: 20px;
+
+	@include to-mobile {
+		padding: 0px;
+
+		}
+		@include tablet {
+			padding: 10px;
+			}
+			@include pc {
+				padding: 10px;
+				}
+
+
 }
 .tab.is-active { display: flex; 
 	justify-content: flex-start;
@@ -32,12 +64,28 @@
 }
 
 .tabs__text {
-	margin-top: 10px;
+	display: block;
+	box-sizing: border-box;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: var(--basic-text-color);
 	text-align: left;
+
+	@include to-mobile {
+		font-size: 14px;
+		padding: 5px;
+	}
+		@include mobile {
+			padding: 5px;
+			font-size: 14px;}
+		@include tablet {
+			padding: 5px;
+			font-size: 16px;
+			}
+			@include pc {
+				font-size: 16px;
+				}
  }
 
 
