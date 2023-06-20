@@ -12,7 +12,7 @@
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    // bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -23,6 +23,12 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    // bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  const mobileMenuItems = document.querySelectorAll('.mobile-menu .mobile-menu__link');
+  mobileMenuItems.forEach(function(el, i, parent) {
+    el.addEventListener('click', toggleMenu);
+  });
+
 })();
