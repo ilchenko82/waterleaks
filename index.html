@@ -136,30 +136,30 @@
 			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
 					<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-						<form class="modal__form">
+						<form class="modal__form" method="post" action="/send.php">
 							<div class="modal__form-field">
 								<label class="modal__form-label" for="name">Ім'я</label>
-								<input class="modal__form-input" type="text" id="name" placeholder="Введіть ваше ім'я">
+								<input class="modal__form-input" type="text" name="name" id="name" placeholder="Введіть ваше ім'я">
 								<svg width="12px" height="12px" class="modal__form-icon">
 									<use href="./images/sprite.svg#icon-name"></use>
 								</svg>
 							</div>
 							<div class="modal__form-field">
-								<label class="modal__form-label" for="tel">Телефон</label>
-								<input class="modal__form-input" type="tel" id="tel" placeholder="+380">
+								<label class="modal__form-label" for="tel">Телефон*</label>
+								<input class="modal__form-input" type="tel" name="tel" id="tel" placeholder="+380" required>
 								<svg width="13px" height="13px" class="modal__form-icon">
 									<use href="./images/sprite.svg#icon-telnumber"></use>
 								</svg>
 							</div>
 							<div class="modal__checkbox">
 								<p class="modal__messenger">Оберіть зручний для вас засіб спілкування:</p>
-								<label for="check" class="checkbox">
-									<input  type="checkbox" name="telegram" id="check">
+								<label for="telegram" class="checkbox">
+									<input  type="checkbox" name="telegram" id="telegram">
 									<!-- <span class="modal__checkbox-frame"></span> -->
 									<p class="modal__checkbox-text">Telegram</p>
 								</label>
-								<label for="check" class="checkbox">
-									<input  type="checkbox" name="viber" id="check">
+								<label for="viber" class="checkbox">
+									<input  type="checkbox" name="viber" id="viber">
 									<!-- <span class="modal__checkbox-frame"></span> -->
 									<p class="modal__checkbox-text">Viber</p>
 								</label>
@@ -172,7 +172,7 @@
 
 							<div class="modal__form-field">
 								<label class="modal__form-label" for="comment">Коротко опишіть вашу проблему (за бажанням)</label>
-								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="У мене мокра стіна та стеля, сусіди топлять, але хто саме - незрозуміло"></textarea>
+								<textarea class="modal__form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="У мене мокра стіна та стеля, сусіди топлять, але хто саме - незрозуміло. Допоможіть, будь-ласка!"></textarea>
 							</div>
 
 						<button type="submit" class="button-blue button-send">Відправити</button>
