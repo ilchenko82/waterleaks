@@ -341,24 +341,27 @@ ul {
 
 .section {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-top: 60px;
   }
 }
 
@@ -1133,12 +1136,14 @@ ul {
   .hero {
     padding: 118px 0;
     height: 400px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
     padding: 200px 0;
+    margin-top: 30px;
   }
 }
 .hero__text-title {
@@ -1529,6 +1534,16 @@ ul {
 .button-margin {
   margin-top: 60px;
 }
+@media screen and (max-width: 480px) {
+  .button-margin {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .button-margin {
+    margin-top: 30px;
+  }
+}
 
 .button-margin-footer {
   margin-top: 3%;
@@ -1883,24 +1898,24 @@ ul {
 }
 
 .rules {
-  padding-top: 0px;
+  padding-top: 40px;
   padding-bottom: 0px;
 }
 @media screen and (min-width: 480px) {
   .rules {
-    padding-top: 0px;
+    padding-top: 30px;
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .rules {
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .rules {
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 0px;
   }
 }
@@ -2185,21 +2200,24 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 480px) {
   .team__title {
     font-size: 24px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__title {
     font-size: 28px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__title {
     font-size: 30px;
+    margin-top: 60px;
     line-height: 1.67;
     letter-spacing: 0.03em;
     text-align: center;

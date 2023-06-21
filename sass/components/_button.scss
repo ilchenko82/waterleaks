@@ -25,7 +25,15 @@
 
  .button-margin{
 	margin-top: 60px;
+	@include to-mobile {
+		margin-top: 30px;
+		
+    }
 
+@include mobile {
+		margin-top: 30px;
+		
+    }
  }
 
  .button-margin-footer{
