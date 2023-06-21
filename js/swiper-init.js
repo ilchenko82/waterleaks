@@ -8,7 +8,7 @@
       pagination: {
         el: ".swiper-pagination",
       },
-      mousewheel: true,
+      mousewheel: false,
       keyboard: true,
 		slidesPerView: 1,
 		breakpoints: {

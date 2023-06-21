@@ -27,22 +27,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 60px;
+      gap: 30px;
     }
     @include tablet {
 		max-width: 768px;
       justify-content:space-around;
 		flex-wrap: wrap;
       flex-direction: row;
-      align-items: flex-start;
-      gap: 60px;
+      align-items: center;
+      gap: 30px;
 
     }
     @include pc {
 		max-width: 1200px;
 		display: flex;
 		flex-direction: row;
-		align-items: baseline;
+		align-items: center;
 		text-align: left;
 		padding-left: 15px;
     }

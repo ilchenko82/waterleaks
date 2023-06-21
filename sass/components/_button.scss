@@ -24,10 +24,26 @@
  }
 
  .button-margin{
-	margin-top: 30px;
+	margin-top: 60px;
 
  }
 
+ .button-margin-footer{
+	margin-top: 3%;
+
+	@include mobile {
+		margin-top: 0px;
+		
+    }
+    @include tablet {
+		margin-top: 30px;
+		
+
+    }
+    @include pc {
+		margin-top: 30px;
+ }
+ }
  .multibutton {
 	position: fixed;
 	z-index: 200;
