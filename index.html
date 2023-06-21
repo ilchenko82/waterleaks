@@ -60,11 +60,11 @@
 			<a class="logo" href="./index.html">Water<span class="logo-black">Leaks</span></a>
 			<nav class="nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a class="nav__link" href="#services">Послуги та ціни</a></li>
-					<li class="nav__item"><a class="nav__link" href="#search_stage">Про пошук</a></li>
-					<li class="nav__item"><a class="nav__link" href="#our_case">Роботи</a></li>
 					<li class="nav__item"><a class="nav__link" href="#we_do">Про витоки</a></li>
 					<li class="nav__item"><a class="nav__link" href="#tools">Обладнання</a></li>
+					<li class="nav__item"><a class="nav__link" href="#search_stage">Про пошук</a></li>
+					<li class="nav__item"><a class="nav__link" href="#our_case">Роботи</a></li>
+					<li class="nav__item"><a class="nav__link" href="#services">Послуги та ціни</a></li>
 				</ul>
 			</nav>
 			<button type="button" class="js-open-menu menu-toggle" data-menu-button="" aria-expanded="false" aria-controls="mobile-menu">
@@ -91,25 +91,23 @@
 			</button>
 			<ul class="mobile-menu">
 				<li class="mobile-menu__item">
-					<a
-					href="#services"
-					  class="link mobile-menu__link">Послуги та ціни </a
-					>
+					<a href="#we_do" class="link mobile-menu__link">Про Витоки</a>
 				 </li>
+				 <li class="mobile-menu__item">
+					<a href="#tools" class="link mobile-menu__link">Обладнання</a>
+				 </li>
+
 			  <li class="mobile-menu__item">
 				 <a
 				 href="#search_stage"
-					class="link mobile-menu__link">Про пошук</a
-				 >
+					class="link mobile-menu__link">Про пошук</a>
 			  </li>
 			  <li class="mobile-menu__item">
 				 <a href="#our_case" class="link mobile-menu__link">Роботи</a>
 			  </li>
 			  <li class="mobile-menu__item">
-				<a href="#we_do" class="link mobile-menu__link">Про Витоки</a>
-			 </li>
-			  <li class="mobile-menu__item">
-				<a href="#tools" class="link mobile-menu__link">Обладнання</a>
+				<a	href="#services"
+				  class="link mobile-menu__link">Послуги та ціни </a>
 			 </li>
 			</ul>
 			<ul class="contacts-menu">
@@ -282,7 +280,7 @@
 		</ul>
 		</div>
 	</section>
-	<section class="section rules" id="search_stage">
+	<section class="section rules" id="tools">
 		<div class="container" >
 		<h2 class="team__title">Обладнання для пошуку витоків</h2>
 
@@ -678,6 +676,60 @@
 		</ul>
 	</div>
 	</section> -->
+	<section class="container">
+		<button type="button" class="button-blue button-margin-footer" footer-modal-open>Замовити послугу</button>
+		<div class="backdrop is-hidden" footer-modal>
+			<div class="modal">
+				<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+					<form class="modal__form">
+						<div class="modal__form-field">
+							<label class="modal__form-label" for="name">Ім'я</label>
+							<input class="modal__form-input" type="text" id="name" placeholder="Введіть ваше ім'я">
+							<svg width="12px" height="12px" class="modal__form-icon">
+								<use href="./images/sprite.svg#icon-name"></use>
+							</svg>
+						</div>
+						<div class="modal__form-field">
+							<label class="modal__form-label" for="tel">Телефон</label>
+							<input class="modal__form-input" type="tel" id="tel" placeholder="+380">
+							<svg width="13px" height="13px" class="modal__form-icon">
+								<use href="./images/sprite.svg#icon-telnumber"></use>
+							</svg>
+						</div>
+						<div class="modal__checkbox">
+							<p class="modal__messenger">Оберіть зручний для вас засіб спілкування:</p>
+							<label for="check" class="checkbox">
+								<input  type="checkbox" name="telegram" id="check">
+								<!-- <span class="modal__checkbox-frame"></span> -->
+								<p class="modal__checkbox-text">Telegram</p>
+							</label>
+							<label for="check" class="checkbox">
+								<input  type="checkbox" name="viber" id="check">
+								<!-- <span class="modal__checkbox-frame"></span> -->
+								<p class="modal__checkbox-text">Viber</p>
+							</label>
+							<label for="phone" class="checkbox">
+								<input  type="checkbox" name="phone" id="phone">
+								<!-- <span class="modal__checkbox-frame"></span> -->
+								<p class="modal__checkbox-text">Телефон</p>
+							</label>
+				</div>
+
+						<div class="modal__form-field">
+							<label class="modal__form-label" for="comment">Коротко опишіть вашу проблему (за бажанням)</label>
+							<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="У мене мокра стіна та стеля, сусіди топлять, але хто саме - незрозуміло"></textarea>
+						</div>
+
+					<button type="submit" class="button-blue button-send">Відправити</button>
+					</form>
+					<button class="button-closed" footer-modal-close>
+						<svg width="11px" height="11px">
+							<use href="./images/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+			</div>
+		</div>
+	</section>
 
 </main>
 <footer class="footer">
@@ -690,61 +742,8 @@
 			<ul class="footer__contacts-list">
 				<li class="footer__contacts-items"><a class="footer__contacts-link" href="mailto:info@waterleaks.com.ua">info@waterleaks.com.ua</a></li>
 				<li class="footer__contacts-items"><a class="footer__contacts-link" href="tel:+380689001811">+38 098 151 58 02</a></li>
-
 			</ul>
 		</address>
-		<button type="button" class="button-blue button-margin-footer" footer-modal-open>Замовити послугу</button>
-			<div class="backdrop is-hidden" footer-modal>
-				<div class="modal">
-					<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-						<form class="modal__form">
-							<div class="modal__form-field">
-								<label class="modal__form-label" for="name">Ім'я</label>
-								<input class="modal__form-input" type="text" id="name" placeholder="Введіть ваше ім'я">
-								<svg width="12px" height="12px" class="modal__form-icon">
-									<use href="./images/sprite.svg#icon-name"></use>
-								</svg>
-							</div>
-							<div class="modal__form-field">
-								<label class="modal__form-label" for="tel">Телефон</label>
-								<input class="modal__form-input" type="tel" id="tel" placeholder="+380">
-								<svg width="13px" height="13px" class="modal__form-icon">
-									<use href="./images/sprite.svg#icon-telnumber"></use>
-								</svg>
-							</div>
-							<div class="modal__checkbox">
-								<p class="modal__messenger">Оберіть зручний для вас засіб спілкування:</p>
-								<label for="check" class="checkbox">
-									<input  type="checkbox" name="telegram" id="check">
-									<!-- <span class="modal__checkbox-frame"></span> -->
-									<p class="modal__checkbox-text">Telegram</p>
-								</label>
-								<label for="check" class="checkbox">
-									<input  type="checkbox" name="viber" id="check">
-									<!-- <span class="modal__checkbox-frame"></span> -->
-									<p class="modal__checkbox-text">Viber</p>
-								</label>
-								<label for="phone" class="checkbox">
-									<input  type="checkbox" name="phone" id="phone">
-									<!-- <span class="modal__checkbox-frame"></span> -->
-									<p class="modal__checkbox-text">Телефон</p>
-								</label>
-					</div>
-
-							<div class="modal__form-field">
-								<label class="modal__form-label" for="comment">Коротко опишіть вашу проблему (за бажанням)</label>
-								<textarea class="modal__form-textarea" name="vomment" id="comment" cols="30" rows="10" placeholder="У мене мокра стіна та стеля, сусіди топлять, але хто саме - незрозуміло"></textarea>
-							</div>
-
-						<button type="submit" class="button-blue button-send">Відправити</button>
-						</form>
-						<button class="button-closed" footer-modal-close>
-							<svg width="11px" height="11px">
-								<use href="./images/sprite.svg#icon-close"></use>
-							</svg>
-						</button>
-				</div>
-			</div>
 		<div class="footer__social-list"><p class="footer__form-title">Приєднуйтесь</p>
 			<ul class="footer__social-link">
 				<li>
