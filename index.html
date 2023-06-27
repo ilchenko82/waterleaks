@@ -35,6 +35,36 @@
 	<meta name="twitter:title" content="Пошук витоків води в будинку або квартирі. Знаходимо витоки в Києві та області — WaterLeaks">
 	<meta name="twitter:description" content="Виконуємо пошук витоків води з труб, в стяжках, стінах, під землею. Надаємо консультації, щодо усунення і за потреби виконуємо ремонт пошкодження.">
 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11231408012">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'AW-11231408012');
+	</script>
+
+	<!-- Event snippet for Покупка conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script>
+		function gtag_report_conversion(url) {
+			console.log("conversion")
+			var callback = function () {
+				if (typeof(url) != 'undefined') {
+					window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-11231408012/-GaxCOvSg7AYEIzfxusp',
+				'transaction_id': '',
+				'event_callback': callback
+			});
+			return false;
+		}
+	</script>
+
 </head>
 <body>
 
@@ -50,7 +80,7 @@
 
 <div class="multibutton">
 	<div class="multibutton__button">
-	<a href="tel:+380981515802" class="multibutton__title">
+	<a href="tel:+380981515802" class="multibutton__title" conv-click>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.076 512.076" style="enable-background:new 0 0 512.076 512.076;" xml:space="preserve">
 						<g transform="translate(-1 -1)">
 						<g>
@@ -137,7 +167,7 @@
 			</ul>
 			<ul class="contacts-menu">
 			  <li class="contacts-menu__item">
-				 <a href="tel:+380689001811" class="contacts-menu__link contacts-menu__tel">
+				 <a href="tel:+380689001811" class="contacts-menu__link contacts-menu__tel" conv-click>
 					<svg class="contacts-menu__icon" width="10px" height="16px">
 					  <use href="./images/sprite.svg#icon-phone"></use>
 					</svg>
@@ -717,7 +747,7 @@
 				<p class="footer__address-link">Пошук витоків — наша робота</p>
 			</div>
 			<ul class="footer__contacts-list">
-				<li class="footer__contacts-items"><a class="footer__contacts-link" href="tel:+380689001811">+38 098 151 58 02</a></li>
+				<li class="footer__contacts-items"><a class="footer__contacts-link" href="tel:+380689001811" conv-click>+38 098 151 58 02</a></li>
 			</ul>
 		</address>
 		<div class="footer__social-list"><p class="footer__form-title">Соцмережі</p>
@@ -738,14 +768,14 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://t.me/waterleaksUA" class="footer__social-button">
+					<a href="https://t.me/waterleaksUA" class="footer__social-button" conv-click>
 						<svg width="20px" height="20px">
 							<use href="./images/sprite.svg#telegram-plane"></use>
 						</svg>
 					</a>
 				</li>
 				<li>
-					<a href="viber://chat?number=%2B380689001811" class="footer__social-button">
+					<a href="viber://chat?number=%2B380689001811" class="footer__social-button" conv-click>
 						<svg width="30px" height="30px">
 							<use href="./images/sprite.svg#viber"></use>
 						</svg>
