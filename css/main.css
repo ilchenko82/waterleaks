@@ -1567,7 +1567,7 @@ ul {
 .multibutton {
   position: fixed;
   z-index: 200;
-  right: 20px;
+  right: 30px;
   bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1588,12 +1588,14 @@ ul {
 .multibutton:hover {
   width: auto;
   height: auto;
+  right: 30px;
+  bottom: 30px;
 }
 
 .multibutton:hover .multibutton__list {
   position: relative;
-  top: auto;
-  bottom: 10px;
+  right: 30px;
+  bottom: 30px;
   visibility: visible;
 }
 
@@ -1619,7 +1621,7 @@ ul {
           align-items: flex-end;
   position: absolute;
   right: 13px;
-  top: 80px;
+  bottom: 20px;
   visibility: hidden;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
