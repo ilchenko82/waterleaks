@@ -1585,6 +1585,11 @@ ul {
   transition: 0.2s ease;
 }
 
+.multibutton:hover {
+  width: auto;
+  height: auto;
+}
+
 .multibutton:hover .multibutton__list {
   position: relative;
   visibility: visible;
@@ -2810,7 +2815,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8px; /*
+  gap: 8px; /* 
 padding-top: 94px; */
 }
 @media screen and (max-width: 480px) {
