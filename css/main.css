@@ -1592,8 +1592,6 @@ ul {
 
 .multibutton:hover .multibutton__list {
   position: relative;
-  right: 30px;
-  bottom: 30px;
   visibility: visible;
 }
 
