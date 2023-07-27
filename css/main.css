@@ -1588,8 +1588,6 @@ ul {
 .multibutton:hover {
   width: auto;
   height: auto;
-  right: 30px;
-  bottom: 30px;
 }
 
 .multibutton:hover .multibutton__list {
