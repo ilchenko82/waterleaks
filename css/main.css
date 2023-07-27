@@ -1585,11 +1585,6 @@ ul {
   transition: 0.2s ease;
 }
 
-.multibutton:hover {
-  width: auto;
-  height: auto;
-}
-
 .multibutton:hover .multibutton__list {
   position: relative;
   visibility: visible;
